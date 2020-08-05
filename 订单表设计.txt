@@ -1,0 +1,14 @@
+收货地址表
+
+id  vipId  name  detailAdd  areaIds   iphone isCheck  createDate
+
+订单表
+
+id   addressId  payType    totalmoney    payStatus   createDate
+
+
+订单详情表
+
+id   orderid   productid   count  
+
+

@@ -1,0 +1,12 @@
+
+常用的java lambda表达式stream 表达式
+https://blog.csdn.net/qq_31826603/article/details/106304063?utm_medium=distribute.pc_feed.none-task-blog-alirecmd-6.nonecase&depth_1-utm_source=distribute.pc_feed.none-task-blog-alirecmd-6.nonecase&request_id=
+
+git（版本控制系统    svn）  干的是同一件事
+
+https://www.liaoxuefeng.com/wiki/896043488029600
+
+
+swagger（动态维护接口文件）
+
+https://www.e-learn.cn/content/qita/1542698

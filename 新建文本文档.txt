@@ -1,0 +1,26 @@
+springBoot搭建：
+	一.在你建立的工程下创建 Module 选择Spring initializr创建。 
+	 二.在Type处选择: Maven Project(项目的构建工具)  注意修改 包结构 项目名 以及下面type 选择maven  Project  下面jdk版本
+	三.创建依赖时勾上web,mybatis,mysql(这个看你个人需要吧，可以自主选择)
+	四. <parent>
+    		<groupId>org.springframework.boot</groupId>
+ 		   <artifactId>spring-boot-starter-parent</artifactId>
+   		 <version>2.3.2.RELEASE</version>
+  		  <relativePath/> <!-- lookup parent from repository -->
+		  </parent>  指名这是一个springBoot项目 
+		 <java.version>1.8</java.version>
+		在properties标签里面加入java.version 指定jdk版本
+	五.引入其他所需要的jre包
+	六.在创建好SpringBoot项目的时候要知道他是使用启动类进行启动项目的需要加入@SpringBootApplication 运行psvm SpringApplication.run(App.class,args);
+	七.在启动类上面加入@MapperScan("com.fh.mapper") 指定你的dao层 （特别情况下要在dao层接口加入@Repository）
+	八.在使用mybatis的时候  需要扫描mapper层的时候 在application.properties 加入mybatis.mapper-locations=classpath:mapper/*.xml
+
+springBoot跨域：
+	一.@CrossOrigin("http://localhost:8085")//表示只允许这一个url可以跨域访问这个controller 这个加载类上就可以
+		value属性可以设置多个URL。
+		origins属性也可以设置多个URL。
+		maxAge属性指定了准备响应前的缓存持续的最大时间。就是探测请求的有效期。
+		allowCredentials属性表示用户是否可以发送、处理 cookie。默认为false
+		allowedHeaders 属性表示允许的请求头部有哪些。
+		methods 属性表示允许请求的方法，默认get，post，head。
+	二.
